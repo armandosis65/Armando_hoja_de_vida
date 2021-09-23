@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background: #a9a9a9;
+    font-size: 14px;
+    line-height: 22px;
+    color:#0a0a0a;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;  
+}
+
+.semi_bold{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.resume{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+.resume_left{
+    width: 220px;
+    background: linear-gradient(0deg, rgb(99, 193, 233) 0%, rgb(103, 69, 207) 100%); 
+    text-align:center
+}
+
+.resume_perfil::after {
+    justify-content: after space-between;
+    width: 100%;
+    height: 280px;
+}
+
+.resume_perfil img{
+    width: 100%;
+    height: 100%;
+}
+
+.resume_contenido{
+    padding: 0 20px;
+}
+
+.resume_item{
+    padding: 20px 0;
+    border-bottom: 2px solid;
+}
+
+.resume_item:last-child
+.resume_item:last-child{
+    border-bottom: 0px;
+}
+
+.resume_left ul li{
+    margin-bottom: 8px;
+}
+
+
+.resume_right{
+    width: 520px;
+    background: #fff;
+    padding: 25px;
+}
+
+.resume_right .bold{
+    color: rgb(59, 14, 221);
+}
+
+.resume_explaboral ul,
+.resume_educación ul{
+    padding-left: 40px;
+    overflow: hidden; 
+}
+
+.resume_right ul li{
+    position: relative;
+}
+
+.resume_right ul li .fecha{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resume_right ul li .info{
+    margin-bottom: 20px;
+}
+
+.resume_right ul li:last-child .info{
+    margin-bottom: 0;
+}
+
+.resume_explaboral ul li:before,
+.resume_educación ul li:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #3d8ca7;
+}
+
+.resume_explaboral ul li:after,
+.resume_educación ul li:after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 3px;
+    height: 115px;
+    background: #0c6788;
+}
+
+.resume.pasatiempos ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume.pasatiempos ul li{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0c6788;
+    border-radius: 50%;
+    position: relative;
+    color: #0c6788;
+}
+
+.resume_profesional{
+    text-align: justify;
+}
+
